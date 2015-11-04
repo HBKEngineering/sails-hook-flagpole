@@ -1,6 +1,6 @@
 <p align="center"><img src="/../images/sails.png?raw=true" height="80"/><img src="/../images/jsonapi.png?raw=true" height="80"/></p>
 
-# sails-hook-jsonapi
+# sails-hook-flagpole
 
 This is a [Sails JS](http://sailsjs.org) hook for creating an API which conforms to JSON API specifications per jsonapi.org.
 
@@ -8,7 +8,9 @@ This is a [Sails JS](http://sailsjs.org) hook for creating an API which conforms
 
 ### Installation
 
-`npm install sails-hook-jsonapi`
+When we get on NPM:
+
+`npm install sails-hook-flagpole`
 
 ### Usage
 *requires at least sails >= 0.11*

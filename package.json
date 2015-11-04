@@ -1,7 +1,7 @@
 {
-  "name": "sails-hook-jsonapi",
-  "version": "0.0.1",
-  "description": "A Sails.js hook for creating an API which conforms to JSON API specifications per jsonapi.org",
+  "name": "sails-hook-flagpole",
+  "version": "0.1.0",
+  "description": "Sails responses with superpowers.",
   "main": "index.js",
   "sails": {
     "isHook": true
@@ -18,14 +18,14 @@
     "api",
     "ember-data"
   ],
-  "author": "Ian VanSchooten",
+  "author": "Brett Neese",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IanVS/sails-hook-jsonapi/issues"
+    "url": "https://github.com/brettneese/sails-hook-flagpole/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IanVS/sails-hook-jsonapi"
+    "url": "https://github.com/brettneese/sails-hook-flagpole"
   },
   "dependencies": {
     "jsonapi-serializer": "brettneese/jsonapi-serializer#3.0.0-beta.1",
