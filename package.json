@@ -1,0 +1,57 @@
+{
+  "name": "sails-hook-flagpole",
+  "version": "0.1.0",
+  "description": "Sails responses with superpowers.",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "test": "tape tests/responses/*.js | tap-spec",
+    "lint": "eslint lib/ tests/responses/",
+    "pretest": "npm run lint"
+  },
+  "keywords": [
+    "sails",
+    "jsonapi",
+    "sails-hook",
+    "api",
+    "ember-data"
+  ],
+  "author": {
+    "name": "Brett Neese"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettneese/sails-hook-flagpole/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettneese/sails-hook-flagpole.git"
+  },
+  "dependencies": {
+    "jsonapi-serializer": "github:brettneese/jsonapi-serializer#3.0.0-beta.1",
+    "pluralize": "^1.1.2",
+    "sails-build-dictionary": "^0.10.1"
+  },
+  "devDependencies": {
+    "barrels": "^1.5.0",
+    "eslint": "^1.0.0",
+    "eslint-config-ianvs": "^0.0.6",
+    "eslint-config-standard": "^4.0.0",
+    "eslint-plugin-standard": "^1.1.0",
+    "sails": "^0.11.0",
+    "sails-memory": "^0.10.5",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1",
+    "tape-catch": "^1.0.4"
+  },
+  "gitHead": "719def8367f62b8b104791a14191754931c295a3",
+  "readme": "<p align=\"center\"><img src=\"/../images/sails.png?raw=true\" height=\"80\"/><img src=\"/../images/jsonapi.png?raw=true\" height=\"80\"/></p>\n\n# sails-hook-flagpole\n\nThis is a [Sails JS](http://sailsjs.org) hook for creating an API which conforms to JSON API specifications per jsonapi.org.\n\n*Note*: This project is still in development, and is not yet fully functional. \n\n### Installation\n\nWhen we get on NPM:\n\n`npm install sails-hook-flagpole`\n\n### Usage\n*requires at least sails >= 0.11*\n\nJust lift your app as normal, and your api responses will be formatted in accordance with [jsonapi.org](http://jsonapi.org/format/).\n\n#### Options\nCreate a `jsonapi.js` file inside the `config/` directory of your app, and you can set the following options:\n\n| Option        | Default   |  Description  |\n|---------------|:---------:|---------------|\n| `compoundDoc` |  `true`   | When set to 'true' (default), response will be a [compound document](http://jsonapi.org/format/#document-compound-documents). Otherwise, related resources will be nested within the top-level resource attributes. |\n| `included`    |  `true`   | When set to `true` (default), related resource data will be [included](http://jsonapi.org/format/#fetching-includes) in the response. Currently, `include` parameters in client requests are not supported.  |\n\n\n### Known Limitations\n\nThis is still a project-in-work.  So far, the following are not yet implemented:\n\n- [ ] Included request parameter handling (400 response if present)\n- [ ] Links\n  - [ ] Top-level \"self\" links\n  - [ ] Top-level \"related\" links\n  - [ ] Resource-level \"self\" links\n  - [ ] Related resource relationship links\n  - [ ] Metadata links\n- [ ] Pagination\n- [ ] Formatting\n  - [ ] Non-dasherized attributes\n- [ ] Sparse fieldsets\n\nThere may be more.  Please submit issue reports.\n",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/brettneese/sails-hook-flagpole#readme",
+  "_id": "sails-hook-flagpole@0.1.0",
+  "_shasum": "7f49f051d19d55a8a89daa36f1d76ae24fd748a1",
+  "_from": "git+https://github.com/brettneese/sails-hook-flagpole.git",
+  "_resolved": "git+https://github.com/brettneese/sails-hook-flagpole.git#719def8367f62b8b104791a14191754931c295a3"
+}
