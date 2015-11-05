@@ -107,7 +107,7 @@ test('Returns correct attributes', function (t) {
 test('Returns correct nested resources', function (t) {
   t.plan(3);
 
-  sails.config.jsonapi.compoundDoc = false;
+  sails.config.flagpole.compoundDoc = false;
 
   sails.request({
     url   : '/author',
@@ -130,7 +130,7 @@ test('Returns correct nested resources', function (t) {
 test('Returns relationships for compound document', function (t) {
   t.plan(4);
 
-  sails.config.jsonapi.compoundDoc = true;
+  sails.config.flagpole.compoundDoc = true;
 
   sails.request({
     url   : '/author',
@@ -154,8 +154,8 @@ test('Returns relationships for compound document', function (t) {
 test('Returns included data', function (t) {
   t.plan(8);
 
-  sails.config.jsonapi.compoundDoc = true;
-  sails.config.jsonapi.included = true;
+  sails.config.flagpole.compoundDoc = true;
+  sails.config.flagpole.included = true;
 
   sails.request({
     url   : '/author',
@@ -183,8 +183,8 @@ test('Returns included data', function (t) {
 test('Does not return included data if "included = false"', function (t) {
   t.plan(2);
 
-  sails.config.jsonapi.compoundDoc = true;
-  sails.config.jsonapi.included = false;
+  sails.config.flagpole.compoundDoc = true;
+  sails.config.flagpole.included = false;
 
   sails.request({
     url   : '/author',
