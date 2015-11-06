@@ -30,7 +30,7 @@
     "url": "git+https://github.com/brettneese/sails-hook-flagpole.git"
   },
   "dependencies": {
-    "jsonapi-serializer": "github:brettneese/jsonapi-serializer#3.0.0-beta.1",
+    "jsonapi-serializer": "https://github.com/brettneese/sails-hook-flagpole/tarball/master",
     "pluralize": "^1.1.2",
     "sails-build-dictionary": "^0.10.1"
   },
